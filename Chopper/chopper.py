@@ -2,16 +2,16 @@
 """
 Created on Mon Aug 14 19:10:03 2023
 
-@author: asp00
+@author: codePI
 """
 
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-diab_model = pickle.load(open('C:/Users/asp00/OneDrive/Documents/Chopper/saved_model/diabetic_chopper.sav', 'rb'))
+diab_model = pickle.load(open('Chopper/saved_model/diabetic_chopper.sav', 'rb'))
 
-heart_model = pickle.load(open('C:/Users/asp00/OneDrive/Documents/Chopper/saved_model/heart_chopper.sav', 'rb'))
+heart_model = pickle.load(open('Chopper/saved_model/heart_chopper.sav', 'rb'))
 
 
 with st.sidebar:
@@ -129,23 +129,22 @@ if select_op=='help':
 
     
 if (select_op=='About me'):
-    st.title("Hey I'm Abhishek Paul P")
+    st.title("Hey, i'm sahu")
     st.write ('My Github Repo')
-    url1 = 'https://github.com/AbhishekPaul08'
+    url1 = 'https://github.com/mr-sahu2002'
     image_url = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
     insta_url2 = "https://www.svgrepo.com/show/303154/instagram-2016-logo.svg"
     image_html = f'<a href="{url1}"><img src="{image_url}" alt="Icon" width="50" height="50">'
 
     st.markdown(image_html, unsafe_allow_html=True)
-    
-    #st.markdown("[![Title]()](https://github.com/AbhishekPaul08)")
+
     
    # st.markdown(f'''<a href={url1}><button style="background-color:GreenYellow;">GitHub</button></a>''', unsafe_allow_html=True)
     st.write('Linkedin')
     #st.markdown(f'''<a href={url2}><button style="background-color:GreenYellow;">Linkedin</button></a>''', unsafe_allow_html=True)
-    st.markdown("[![Title](https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg)](https://www.linkedin.com/in/abhi-shek-paul-955627282/)")
+    st.markdown("[![Title](https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg)](https://www.linkedin.com/in/durgamadhab-sahu-8b6b21215/)")
     st.title('Connect with me on Social Media')
-    url2 = "https://instagram.com/abhii_shek_paul?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+    url2 = "https://www.instagram.com/mr.sahu20/"
     insta_html = f'<a href="{url2}"><img src="{insta_url2}" alt="Icon" width="50" height="50">'
 
     st.markdown(insta_html, unsafe_allow_html=True)
