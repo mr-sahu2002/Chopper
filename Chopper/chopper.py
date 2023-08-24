@@ -73,10 +73,10 @@ if (select_op == 'Heart disease prediction'):
         age = st.text_input('Your age')
         
     with col2:
-        sex = st.text_input('Gender Male/Female only')
+        sex = st.text_input('Gender Male(1)/Female(0) only')
          
     with col3:
-        cp = st.text_input('Chest Pain type')
+        cp = st.text_input('Chest Pain type(0-3)')
          
     with col1:
         trestbps = st.text_input('Resting Blood Presure')
@@ -84,7 +84,7 @@ if (select_op == 'Heart disease prediction'):
     with col2:
         chol = st.text_input('Colestral level in mg/dL')
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar')
+        fbs = st.text_input('Fasting Blood Sugar(>120 mg/dl)')
           
     with col1:
         restecg = st.text_input('Resting ECG Results')
